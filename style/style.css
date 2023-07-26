@@ -1,0 +1,130 @@
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #001424;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .left {
+        font-size: 2rem;
+      }
+
+      nav {
+        position:sticky;
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+        align-items: center;
+        background-color: #17354e;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      /* this is for ligthing effect of hoverd font */
+      @keyframes lightning {
+        0% { color: #ffffff; } /* White color */
+        20% { color: #0088ff; } /* Light blue color */
+        40% { color: #ffffff; } /* White color */
+        60% { color: #0088ff; } /* Light blue color */
+        80% { color: #ffffff; } /* White color */
+        100% { color: #0088ff; } /* Light blue color */
+      }
+    
+    
+      nav ul li a {
+        font-size: 18px;
+        /* Add other styles for the font here */
+      }
+    
+      nav ul li a:hover {
+        text-decoration:underline;
+        font-weight:600;
+        font-size: 1.5rem;
+        animation: lightning 6s infinite;
+        
+      }
+
+
+      /* nav ul li a:hover {
+        font-size: 1.1rem;
+        color: #EEDD82 ;
+      } */
+      
+
+      main hr{
+        border: 0;
+        background-color: #dea043;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 30vh 0;
+      }
+
+      .firstSection > div {
+        width: 35%;
+        margin-left: 10px;
+      }
+
+      .rightSection {
+        font-size: 2.5rem;
+      }
+
+      .leftSection img {
+        transform: rotateX(30deg);
+       
+        width: 80%;
+      }
+      .leftSection img:hover{
+        transform: translate3d(0,100%,0);
+        opacity: .5;
+      }
+
+      .color {
+        color: #dea043;
+        color:  #FA8072;
+        color:#4169E1;
+        color: #DA70D6;
+        color: #008080;
+        color: #228B22;
+        color: #FF6F61;
+        
+      }
+      #element {
+        color: #dea043;
+      }
+      .text-grey{
+        color: #5C92BF;
+        
+      }
+      .secondSection{
+        max-width: 80vw;
+        margin: auto;
+
+      }
+      /* .row{
+        display: flex;
+        flex-direction: column;
+      } */
+      
+   
