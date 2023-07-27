@@ -2,6 +2,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
 
       body {
@@ -29,6 +30,7 @@
       }
 
       nav ul li {
+        display: inline-block;
         list-style-type: none;
         margin: 0 23px;
       }
@@ -36,6 +38,8 @@
       nav ul li a {
         text-decoration: none;
         color: white;
+        position: relative;
+        font-size: 18px;
       }
 
       /* this is for ligthing effect of hoverd font */
@@ -49,19 +53,29 @@
       }
     
     
-      nav ul li a {
-        font-size: 18px;
-        /* Add other styles for the font here */
+      nav ul li a::after {
+        content:'';
+        width: 0;
+        height: 2px;
+        background-color:#FF6F61;
+        position: absolute;
+        transition: 0.5s;
+        left: 0;
+        bottom: -6px;
+        
+      }
+      nav ul li a:hover::after{
+        width: 100%;
       }
     
       nav ul li a:hover {
-        text-decoration:underline;
+        width: 100%;
         font-weight:600;
         font-size: 1.5rem;
         animation: lightning 6s infinite;
         
       }
-
+ 
 
       /* nav ul li a:hover {
         font-size: 1.1rem;
@@ -116,6 +130,20 @@
       .text-grey{
         color: #5C92BF;
         
+      }
+
+      /* ------------ about me -----------  */
+      #about{
+        padding: auto;
+        color: #ababab;
+
+      }
+      .rowww{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+
       }
       .secondSection{
         max-width: 80vw;
